@@ -457,7 +457,7 @@ while  (differ > tol) && (liter <= maxiter);
    while test > 10^(-8);
       probst1 = trans*probst;
       test = max(abs(probst1-probst));
-      probst = probst1;
+      probst = probst1; 
    end;
    
    %
