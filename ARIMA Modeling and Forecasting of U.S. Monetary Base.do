@@ -36,7 +36,7 @@ tsline base
 
 /* 1. Plot data. */
 
-gen yyy=log(base)
+gen yyy=log(base) 
 label var yyy "log(base)"
 tsline yyy
 tsline d.yyy
