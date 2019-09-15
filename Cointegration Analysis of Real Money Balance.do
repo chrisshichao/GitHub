@@ -3,7 +3,7 @@
 
 /******************************************************************************/
 
-clear				/* drop all data and value labels from memory */
+clear			   /* drop all data and value labels from memory */
 clear matrix
 set memory 100m		/* reset the amount of memory allocated to Stata */ 
 
