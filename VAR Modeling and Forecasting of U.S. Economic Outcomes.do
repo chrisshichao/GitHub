@@ -1,6 +1,6 @@
 /**********   VAR Modeling and Forecasting of U.S. Economic Outcomes **********/
 /*************                      Chao Shi                      *************/
-
+ 
 /******************************************************************************/
 
 clear				/* drop all data and value labels from memory */
