@@ -167,8 +167,8 @@ run;
 
 /*** 6. Evaluate the predictive power of the logit model 
 Based on the parameter estimates reported in Part B.i.1, 
-predict the probability of the ìeventî as well as the value of the response variable for each observation in sample B. 
-The response variable is predicted to be an ìeventî if the predicted probability of event is greater 
+predict the probability of the ‚Äúevent‚Äù as well as the value of the response variable for each observation in sample B. 
+The response variable is predicted to be an ‚Äúevent‚Äù if the predicted probability of event is greater 
 than the predicted probability of non-event. These are the out-of-sample predictions. Print out the predicted ***/
 
 data data_b;
@@ -204,9 +204,9 @@ proc logistic data=data_a descending;
 	title "Table 12: Binomial Probit Model";
 run;
 
-/*** 3. Odds: Compute the odds (not odds ratios) of the ìeventî for the following observations ***/
+/*** 3. Odds: Compute the odds (not odds ratios) of the ‚Äúevent‚Äù for the following observations ***/
 /*** a. Each categorical predictor is held at the level that will give the lowest probability of 
-the ìeventî, holding all other predictors constant. Each numerical predictor takes a sequence of 
+the ‚Äúevent‚Äù, holding all other predictors constant. Each numerical predictor takes a sequence of 
 the following values: sample mean minus two standard deviations, sample mean, sample mean plus two 
 standard deviations ***/
 
@@ -245,7 +245,7 @@ proc print data=work_odds_3a;
 run;
 
 /*** b. Each categorical predictor is held at the level that will give the highest probability of 
-the ìeventî, holding all other predictors constant. Each numerical predictor takes a sequence of 
+the ‚Äúevent‚Äù, holding all other predictors constant. Each numerical predictor takes a sequence of 
 the following values: sample mean minus two standard deviations, sample mean, sample mean plus two 
 standard deviations ***/
 
@@ -350,8 +350,8 @@ run;
 
 /*** 6. Evaluate the predictive power of the logit model 
 Based on the parameter estimates reported in Part B.ii.1, 
-predict the probability of the ìeventî as well as the value of the response variable for each observation in sample B. 
-The response variable is predicted to be an ìeventî if the predicted probability of event is greater 
+predict the probability of the ‚Äúevent‚Äù as well as the value of the response variable for each observation in sample B. 
+The response variable is predicted to be an ‚Äúevent‚Äù if the predicted probability of event is greater 
 than the predicted probability of non-event. These are the out-of-sample predictions. Print out the predicted ***/
 
 proc logistic data=data_a descending outmodel=probit_est noprint;
@@ -371,6 +371,7 @@ proc print data=probit_pred_new (obs=10);
 	var age educ lnnonlabinc i_work P_1;
 	title "Table 16: Probit predictive power";
 run;
+
 
 
 
