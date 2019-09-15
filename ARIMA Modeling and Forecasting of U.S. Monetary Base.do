@@ -34,7 +34,7 @@ tsline base
 
 /*** 1.1 Standard ADF Test ***/
 
-/* 1. Plot data. */
+/* 1. Plot data. */ 
 
 gen yyy=log(base) 
 label var yyy "log(base)"
