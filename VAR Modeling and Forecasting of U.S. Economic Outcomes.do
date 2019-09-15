@@ -35,7 +35,7 @@ tsline y
 tsline p 
 tsline m 
 tsline x
-tsline d.y 
+tsline d.y  
 tsline d2.p 
 tsline d.m 
 tsline d.x
