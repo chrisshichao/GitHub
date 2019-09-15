@@ -797,5 +797,5 @@ tsline mp VAR_level_h4 if tin(1983q1,)
 
 /* C. Compare */
 tsline mp VECM_h1 VAR_level_h1 if tin(1983q1,)
-tsline mp VECM_h4 VAR_level_h4 if tin(1983q1,)
+tsline mp VECM_h4 VAR_level_h4 if tin(1983q1,) 
   
